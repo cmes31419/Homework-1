@@ -30,5 +30,8 @@ contract StudentV2 {
 contract StudentV3 {
     function register() external view returns (uint256) {
         // TODO: please add your implementaiton here
+        uint t = gasleft();
+        if(t%2==1)return 1230;
+        return 123;
     }
 }
